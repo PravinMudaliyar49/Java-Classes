@@ -67,7 +67,7 @@ public class isAnagram {
         }
 
         //Check karne ka kaam.
-        for(int i=0; i<s1.length(); i++){
+        for(int i=0; i<26; i++){
             if(s1arr[i] != s2arr[i]){
                 return false;
             }
