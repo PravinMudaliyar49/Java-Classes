@@ -19,12 +19,15 @@ public class binarySearch {
 
         while (start <= end) {
             int mid = (start + end) / 2;
+            int currEleVal = arr[mid];
 
-            if (arr[mid] < tar) {
+            if (currEleVal < tar) {
                 start = mid + 1;
-            } else if (arr[mid] > tar) {
+
+            } else if (currEleVal > tar) {
                 end = mid - 1;
-            } else {
+
+            } else if(currEleVal == tar) {
                 return true;
             }
         }

@@ -23,18 +23,19 @@ public class ceilAndFloor {
 
         while (start <= end) {
             int mid = (start + end) / 2;
+            int currEleVal = arr[mid];
 
-            if (arr[mid] < ele) {
+            if (currEleVal < ele) {
                 start = mid + 1;
-                floor = arr[mid];
+                floor = currEleVal;
                 
-            } else if (arr[mid] > ele) {
+            } else if (currEleVal > ele) {
                 end = mid - 1;
-                ceil = arr[mid];
+                ceil = currEleVal;
                 
-            } else {
-                ceil = arr[mid];
-                floor = arr[mid];
+            } else if(currEleVal == ele) {
+                ceil = currEleVal;
+                floor = currEleVal;
                 break;
             }
         }
