@@ -1,7 +1,7 @@
 public class firstAndLastIndex {
     public static void main(String[] args) {
         int[] arr = { 1, 1, 2, 2, 2, 5, 6, 7, 7, 7, 7 };
-        int toFind = 2;
+        int toFind = 17;
 
         int ans1 = firstInd(arr, toFind);
         int ans2 = lastInd(arr, toFind);
