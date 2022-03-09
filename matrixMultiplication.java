@@ -1,9 +1,9 @@
-import java.sql.Array;
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 
 public class matrixMultiplication {
     public static void main(String[] args) {
+        //TIME: 0(N^N^N) and SPACE: O(1).
+
         Scanner sc = new Scanner(System.in);
         int r1 = sc.nextInt();
         int c1 = sc.nextInt();
@@ -26,7 +26,7 @@ public class matrixMultiplication {
         }
 
         if (c1 != r2) {
-            System.out.println("Not possible!");
+            System.out.println("Invalid input");
             return;
         }
 
@@ -38,7 +38,7 @@ public class matrixMultiplication {
 
                 for (int k = 0; k < r2; k++) {
                     int product = arr1[row][k] * arr2[k][col];
-                    sum += product; // sum = sum + product;
+                    sum += product;     // sum = sum + product;
                 }
 
                 res[row][col] = sum;
