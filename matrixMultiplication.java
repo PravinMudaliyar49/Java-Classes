@@ -1,3 +1,5 @@
+import java.sql.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class matrixMultiplication {
@@ -30,14 +32,29 @@ public class matrixMultiplication {
 
         int[][] res = new int[r1][c2];
 
-        for (int i = 0; i < res.length; i++) {
-            for (int j = 0; j < res[0].length; j++) {
+        for (int row = 0; row < res.length; row++) {
+            for (int col = 0; col < res[row].length; col++) {
+                int sum = 0;
 
                 for (int k = 0; k < r2; k++) {
-                    int product = arr1[i][k] * arr2[k][j];
+                    int product = arr1[row][k] * arr2[k][col];
+                    sum += product; // sum = sum + product;
                 }
 
+                res[row][col] = sum;
             }
+        }
+
+        for (int row = 0; row < res.length; row++) {
+            for (int col = 0; col < res[row].length; col++) {
+                System.out.print(res[row][col] + " ");
+            }
+
+            System.out.println();
+        }
+
+        for (int row = 0; row < res.length; row++) {
+            System.out.println(Arrays.toString(res[row]));
         }
 
     }
