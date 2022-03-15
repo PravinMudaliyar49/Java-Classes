@@ -58,9 +58,11 @@ public class strings {
 
         System.out.println(end1 - start1);
 
-        long start2 = System.currentTimeMillis();
 
-        StringBuilder sb = new StringBuilder();
+        
+        StringBuilder sb = new StringBuilder("H");
+
+        long start2 = System.currentTimeMillis();
 
         for (int i = 0; i < 10000; i++) {
             sb.append(i);
