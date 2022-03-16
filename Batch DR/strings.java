@@ -49,12 +49,28 @@ public class strings {
         // System.out.println(s1.equals(s3));
         // System.out.println(s1.equals(s4));
 
-        String name = sc.nextLine();
-        String aname = "Random";
+        // String name = sc.nextLine();
+        // String aname = "Random";
 
-        System.out.println(name == aname);
-        System.out.println(name.equals(aname));
+        // System.out.println(name == aname);
+        // System.out.println(name.equals(aname));
+
+        // String str = "Hello";
+
+        // str += 1;
+
+        // System.out.println(str);
+
+        StringBuilder sb = new StringBuilder("Hello");
+
+        // System.out.println(sb.charAt(1));
         
+        // sb.setCharAt(4, 'p');       //Hellp
+        // sb.insert(0, "ch");     //chHello
+        // sb.deleteCharAt(0);      // ello
+        // sb.append("ch");        //Helloch
+
+        System.out.println(sb);
 
     }
 }
