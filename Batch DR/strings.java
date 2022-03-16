@@ -61,16 +61,41 @@ public class strings {
 
         // System.out.println(str);
 
-        StringBuilder sb = new StringBuilder("Hello");
+        // StringBuilder sb = new StringBuilder("Hello");
 
         // System.out.println(sb.charAt(1));
-        
-        // sb.setCharAt(4, 'p');       //Hellp
-        // sb.insert(0, "ch");     //chHello
-        // sb.deleteCharAt(0);      // ello
-        // sb.append("ch");        //Helloch
 
-        System.out.println(sb);
+        // sb.setCharAt(4, 'p'); //Hellp
+        // sb.insert(0, "ch"); //chHello
+        // sb.deleteCharAt(0); // ello
+        // sb.append("ch"); //Helloch
+
+        // System.out.println(sb);
+
+        String str = "H";
+
+        long start1 = System.currentTimeMillis();
+
+        for (int i = 0; i < 100000; i++) {
+            str += i;
+        }
+
+        long end1 = System.currentTimeMillis();
+
+        System.out.println("Consumed by String " + (end1 - start1));
+
+
+        StringBuilder sb = new StringBuilder("H");
+
+        long start2 = System.currentTimeMillis();
+
+        for (int i = 0; i < 100000; i++) {
+            sb.append(i);
+        }
+
+        long end2 = System.currentTimeMillis();
+
+        System.out.println("Consumed by StringBuilder " + (end2 - start2));
 
     }
 }
