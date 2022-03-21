@@ -1,6 +1,6 @@
 public class isPalindrome {
     public static void main(String[] args) {
-        String str = "nitin";
+        String str = "nitina";
         boolean ans = isPalindromeCheck(str);
 
         System.out.println(ans);
