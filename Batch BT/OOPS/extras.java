@@ -19,6 +19,9 @@ public class extras {
         // double val = Math.random();
         // System.out.println(val * 10);
 
+
+        //TERNARY OPERATORS:
+        
         // int a = 30, b = 50;
         // int c = 0;
 
@@ -33,8 +36,23 @@ public class extras {
 
         // System.out.println(c); // 50.
 
-        int a = 10, b = 20, c = 30, ans = 0;
+        int a = 10, b = 200, c = 300, ans = 0;
 
+        // if(a > b){
+        //     if(a > c){
+        //         ans = a;
+        //     }else{
+        //         ans = c;
+        //     }
+        // }else if(b > c){
+        //     ans = b;
+        // }else{
+        //     ans = c;
+        // }
+
+        ans = (a > b) ? (a > c) ? a : c : (b > c) ? b : c;
+
+        System.out.println(ans);
         
     }
 }
