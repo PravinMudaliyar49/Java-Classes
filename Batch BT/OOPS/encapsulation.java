@@ -6,8 +6,9 @@ public class encapsulation {
         // animal.weight = -1;
         // System.out.println(animal.weight);
 
-        animal.setWeight(20);
-        System.out.println(animal.getWeight());
+        // animal.setWeight(20);
+        // System.out.println(animal.getWeight());
+        
 
     }
 }

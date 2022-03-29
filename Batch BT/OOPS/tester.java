@@ -1,8 +1,11 @@
 // package OOPS;
 
 public class tester {
+}
+
+class Tester {
     public static void main(String[] args) {
-        Human bhavesh = new Human();
+        /* Human bhavesh = new Human();
         bhavesh.age = 19;
         bhavesh.hasTwoEyes = true;
         bhavesh.sirname = "Kodam";
@@ -19,11 +22,14 @@ public class tester {
         p2.age = 19;
         p2.saysHi();
 
-        p.saysHi();
+        p.saysHi(); */
+        
+        
+        
     }
 }
 
-class Human {
+class THuman {
     int age;
     boolean hasTwoEyes;
     String sirname;
@@ -42,11 +48,11 @@ class Human {
 
 }
 
-class Person{
+class TPerson {
     String name;
     int age;
 
-    void saysHi(){
+    void saysHi() {
         System.out.println(name + " of this age : " + age + " says hii.");
     }
 
