@@ -9,7 +9,7 @@ public class bubble {
 
         for (int i = 0; i < arr.length; i++) {
             boolean flag = false;
-            
+
             for (int j = 0; j < arr.length - 1 - i; j++) {
                 count++;
 
@@ -29,6 +29,11 @@ public class bubble {
 
         System.out.println(Arrays.toString(arr));
         System.out.println(count);
+
+        int i = 2147483647;
+        i = i + 1;
+        
+        System.out.println(i);
 
     }
 }
