@@ -17,6 +17,7 @@ public class prefixsum {
 class Random {
     public int[] prefixSum1(int[] arr) {
 
+
         int[] ans = new int[arr.length];
         ans[0] = arr[0];
         
