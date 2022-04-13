@@ -1,4 +1,4 @@
-package Questions;
+// package Questions;
 
 public class mergeSorted {
     public int[] mergeTwoSorted(int[] a1, int n, int[] a2, int m) {
