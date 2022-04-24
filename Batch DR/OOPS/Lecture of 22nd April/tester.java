@@ -49,13 +49,14 @@ public class tester {
         // c.compare();
 
         Cat cat1 = new Cat();
-        cat1.name = "Kuchbhi";
-        // System.out.println(cat1.height);     ....Not allowed
+        // cat1.name = "Kuchbhi";
 
-        cat1.setHeight(30);
+        // // System.out.println(cat1.height);     ....Not allowed
 
-        int catHeight = cat1.showHeight();
-        System.out.println(catHeight);
+        // cat1.setHeight(30);
+
+        // int catHeight = cat1.showHeight();
+        // System.out.println(catHeight);
 
     }
 }

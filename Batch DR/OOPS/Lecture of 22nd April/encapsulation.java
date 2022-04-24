@@ -3,7 +3,7 @@ public class encapsulation {
 }
 
 class Cat {
-    String name;
+    private String name;
     private int height = 10;
     private int size = 10;
 
@@ -12,8 +12,25 @@ class Cat {
     }
 
     void setHeight(int input) {
-        if(input > 0){
+        if (input > 0) {
             height = input;
         }
     }
+
+    public void setName(String input) {
+        name = input;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    //Don't do this:
+    
+    // public void setter(int ipheight, String ipName, int ipsize){
+    //     height = ipheight;
+    //     name = ipName;
+    //     size = ipsize;
+    // }
+
 }
