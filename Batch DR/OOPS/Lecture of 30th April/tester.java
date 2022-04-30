@@ -9,12 +9,13 @@ public class tester {
 
 class Player {
     private int random;
+    String name;
 
     int showRandom() {
         return random;
     }
 
-    void generateRandomForMe() {
+    void generateRandomForPlayer() {
         MyRandom myRandom = new MyRandom();
         random = myRandom.myRandomGeneration();
     }
@@ -27,7 +28,7 @@ class Bot {
         return random;
     }
 
-    void generateRandomForMe() {
+    void generateRandomForBot() {
         MyRandom myRandom = new MyRandom();
         random = myRandom.myRandomGeneration();
     }
@@ -36,16 +37,21 @@ class Bot {
 class StartGame {
     public void start() {
         Player p1 = new Player();
+        p1.name = "Dhruv";
+
         Player p2 = new Player();
+        p2.name = "Rushikesh";
+
         Player p3 = new Player();
+        p3.name = "Pravin";
 
         Bot b = new Bot();
 
         while (true) {
-            p1.generateRandomForMe();
-            p2.generateRandomForMe();
-            p3.generateRandomForMe();
-            b.generateRandomForMe();
+            p1.generateRandomForPlayer();
+            p2.generateRandomForPlayer();
+            p3.generateRandomForPlayer();
+            b.generateRandomForBot();
 
             // Not allowed:
             // p1.random = 1;
@@ -57,17 +63,16 @@ class StartGame {
             System.out.println("Bot guessed " + b.showRandom());
 
             if (p1.showRandom() == b.showRandom()) {
-                System.out.println("Player1 won");
+                System.out.println(p1.name + " won.");
                 break;
-
+                
             } else if (p2.showRandom() == b.showRandom()) {
-                System.out.println("Player2 won");
+                System.out.println(p2.name + " won.");
                 break;
-
+                
             } else if (p3.showRandom() == b.showRandom()) {
-                System.out.println("Player3 won");
+                System.out.println(p3.name + " won.");
                 break;
-
             }
 
             System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
