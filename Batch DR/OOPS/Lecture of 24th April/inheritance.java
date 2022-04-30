@@ -41,7 +41,7 @@ class Lion {
 class Tiger extends Lion {
     int number = 2000;
 
-    void dum(){
+    void dum() {
         System.out.println(number);
     }
 }
@@ -52,4 +52,4 @@ class Liger extends Tiger {
 
 // Interface.
 // Activities of each class are different, how will the wrapper class handle
-// that. By overriding.
+// that --> By overriding.
